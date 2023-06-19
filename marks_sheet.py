@@ -56,9 +56,9 @@ label5=Label(root,text="3. Operation System :",font="Calibri 15", bg="lavender",
 
 label6=Label(root,text="4.  English :",font="Calibri 15", bg="lavender",fg="#000000").place(x=150,y=380)
 
-label7=Label(root,text="3. Hindi :",font="Calibri 15", bg="lavender",fg="#000000").place(x=150,y=450)
+label7=Label(root,text="5. Hindi :",font="Calibri 15", bg="lavender",fg="#000000").place(x=150,y=450)
 
-label5=Label(root,text="3. OEC :",font="Calibri 15", bg="lavender",fg="#000000").place(x=150,y=520)
+label5=Label(root,text="6. OEC :",font="Calibri 15", bg="lavender",fg="#000000").place(x=150,y=520)
 
 
 
