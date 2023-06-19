@@ -19,10 +19,10 @@ def Result():
 
     if pytext.get()=="" or OStext.get()=="" or Matext.get()=="" or hinext.get()=="" or engtext.get()=="" or oectext.get()=="":
         Label(root2,text="Please Enter the Marks",font="Chiller 20").place(x=80,y=100)
-    elif int(pytext.get())>100 or int(OStext.get())>100 or int(Matext.get())>100 or int(hinext.get())>100 or int(engtext.get())>100 or int(OStext.get())>100:  
+    elif int(pytext.get())>100 or int(OStext.get())>100 or int(Matext.get())>100 or int(hinext.get())>100 or int(engtext.get())>100 or int(oectext.get())>100:  
         Label(root2,text="Opps Smothing Went Wrong ",font="Chiller 20").place(x=80,y=100)
     else:
-        sum= int(pytext.get())+int(OStext.get())+int(Matext.get())+int(hinext.get())+int(engtext.get())+int(OStext.get())
+        sum= int(pytext.get())+int(OStext.get())+int(Matext.get())+int(hinext.get())+int(engtext.get())+int(oectext.get())
         per=((sum/600)*100)
         Label(root2,text=sum,font=20,bg="white").place(x=200,y=100)
         Label(root2,text=per,font=20,bg="white").place(x=200,y=150)
