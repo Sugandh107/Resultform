@@ -14,13 +14,21 @@ def Result():
     root2.title('MARK SHEET')
     root2.geometry("400x300")
     root2.configure(bg="")
-    root2.resizable(False, False)
-    sum= int(pytext.get())+int(OStext.get())+int(Matext.get())+int(hinext.get())+int(engtext.get())+int(OStext.get())
-    per=((sum/600)*100)
-    Label(root2,text=sum,font=20,bg="white").place(x=200,y=100)
-    Label(root2,text=per,font=20,bg="white").place(x=200,y=150)
-    Label(root2,text="Total marks =",font=20,bg="white").place(x=70,y=100)
-    Label(root2,text="Percentage =",font=20,bg="white").place(x=70,y=150)
+    root2.resizable(False, False) 
+   
+    if pytext.get()=="" or OStext.get()=="" or Matext.get()=="" or hinext.get()=="" or engtext.get()=="" or OStext.get()=="":
+        Label(root2,text="Please Enter the Marks",font="calibri 15").place(x=80,y=100)
+    elif int(pytext.get())>100 or int(OStext.get())>100 or int(Matext.get())>100 or int(hinext.get())>100 or int(engtext.get())>100 or int(OStext.get())>100:  
+        Label(root2,text="Opps Smothing Went Wrong ",font="calibri 15").place(x=80,y=100)
+    else:
+        sum= int(pytext.get())+int(OStext.get())+int(Matext.get())+int(hinext.get())+int(engtext.get())+int(OStext.get())
+        per=((sum/600)*100)
+        Label(root2,text=sum,font=20,bg="white").place(x=200,y=100)
+        Label(root2,text=per,font=20,bg="white").place(x=200,y=150)
+        Label(root2,text="Total marks =",font=20,bg="white").place(x=70,y=100)
+        Label(root2,text="Percentage =",font=20,bg="white").place(x=70,y=150)
+   
+        
     root2.mainloop()
    
     
