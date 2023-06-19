@@ -17,7 +17,7 @@ def Result():
     root2.configure(bg="")
     root2.resizable(False, False) 
 
-    if pytext.get()=="" or OStext.get()=="" or Matext.get()=="" or hinext.get()=="" or engtext.get()=="" or OStext.get()=="":
+    if pytext.get()=="" or OStext.get()=="" or Matext.get()=="" or hinext.get()=="" or engtext.get()=="" or oectext.get()=="":
         Label(root2,text="Please Enter the Marks",font="Chiller 20").place(x=80,y=100)
     elif int(pytext.get())>100 or int(OStext.get())>100 or int(Matext.get())>100 or int(hinext.get())>100 or int(engtext.get())>100 or int(OStext.get())>100:  
         Label(root2,text="Opps Smothing Went Wrong ",font="Chiller 20").place(x=80,y=100)
